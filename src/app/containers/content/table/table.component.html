@@ -1,0 +1,17 @@
+<div class="row" *ngFor="let item of teams">
+    <div class="col s5 teal lighten-3 content-center valign-wrapper">
+        <a class="waves-effect waves-light btn">
+            <i [className]="item.iconTeamOne + ' left'"></i>{{ item.nameTeamOne }}
+        </a>
+        <span class="new badge" data-badge-caption="">{{ item.winTeamOne }}</span>
+    </div>
+    <div class="col s2 content-center valign-wrapper">
+            <span class="new badge" data-badge-caption="">{{ item.draw }}</span>
+    </div>
+    <div class="col s5 light-blue lighten-1 content-center ">
+        <span class="new badge" data-badge-caption="">{{ item.winTeamTwo }}</span>
+        <a class="waves-effect waves-light btn">
+            <i [className]="item.iconTeamTwo + ' right'"></i>{{ item.nameTeamTwo }}
+        </a>
+    </div>
+</div>
